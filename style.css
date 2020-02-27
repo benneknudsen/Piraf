@@ -164,7 +164,7 @@ pointer-events: none;
    justify-content: space-between;
     
     
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100%;
   }
 
@@ -206,6 +206,17 @@ pointer-events: none;
     cursor: pointer;
     background-image: url(billeder/facebook.png);
   }
+
+  .home {
+    display:block;
+    cursor: pointer;
+    background-image: url(billeder/home.png);
+  }
+
+  .home:hover,
+  .home:focus {
+    background-image: url(billeder/home-hover.png);
+  }
   
   .icon-facebook:hover,
   .icon-facebook:focus {
@@ -239,7 +250,7 @@ pointer-events: none;
     position: sticky;
     position: -webkit-sticky;
     z-index: 98;
-    margin-top: 70px;
+    margin-top: 50px;
   background-color: white;
   top:0;
     width: 100%;
@@ -267,6 +278,7 @@ pointer-events: none;
 
   .nav-item-dropdown {
     position: relative;
+    z-index: 99;
   }
   .nav-item-dropdown:hover > .dropdown-menu {
     display: block;
@@ -298,6 +310,8 @@ pointer-events: none;
     display: inline-block;
     text-align: right;
     position: absolute;
+    border-radius: 15px;
+    border: 0.5px solid grey;
     top: 2.5rem;
     right: 30px;
     display: none;
@@ -309,8 +323,8 @@ pointer-events: none;
   .dropdown-menu a {
         text-decoration: none;
         color: #a6a6a6;
-        font-size: 16px;
-        font-family: 'Barlow', sans-serif;
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
         font-weight: 500;
       
         
@@ -323,6 +337,7 @@ pointer-events: none;
   }
   .dropdown-menu-item:hover {
     background-color: rgb(230, 220, 220);
+    border-radius: 15px;
   }
   
 
@@ -351,6 +366,33 @@ pointer-events: none;
       z-index: 99;
       
   }
+
+
+  .nav-txt:hover {
+    background-image: url(billeder/nav-hover.png);
+  background-position-y: 5px;
+ 
+    background-repeat: no-repeat;
+    
+
+}
+
+  .LINE {
+    background-color: #fff;
+    min-height: 15px;
+
+}
+
+hr.streg {
+    background-color: #bfc3c6;
+    width: 99.9%;
+    opacity: 0.5;
+    margin-top: 15px;
+    z-index: 55;
+}
+
+
+/* Slider */
 
 
 
