@@ -549,7 +549,6 @@ letter-spacing: 2.5px;
   margin: 10px auto;
   height: auto;
   max-width: 100%;
-
 }
 
 
@@ -563,10 +562,12 @@ width: 1400px;
   padding: 0;
 }
 
+
 .cards_item {
   display: flex;
   padding: 1rem;
-  
+  justify-content: center;
+  justify-items: center;
 }
 
 @media (min-width: 70rem) {
@@ -586,16 +587,23 @@ width: 1400px;
   border-radius: 0.25rem;
   border: 1px solid #bfc3c6;
   display: flex;
-  
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 1.3s ease-in-out;
   flex-direction: column;
   overflow: hidden;
 }
+
+
 
 .card_content {
   position: relative;
   height: 700px;
   
 }
+
+
 
 .nyhed {
   position: absolute;
@@ -734,6 +742,83 @@ transition: 0.4s ease-in-out;
   background-image: url(billeder/cards/kurv-hover.png);
 }
 
+.tilbud {
+  position: relative;
+  z-index: 11;
+ display: block;
+ margin: 0 auto;
+  
+}
 
+.tilbud-p {
+position: relative;
+z-index: 13;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 700;
+font-size: 10px;
+color: #5b6770;
+text-align: center;
+margin-top: -25px;
+text-decoration: #904957 line-through;
+letter-spacing: 2.5px;
+}
+
+
+.input-number {
+  width: 60px;
+  padding: 0 12px;
+  text-align: center;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+  background-image: url(billeder/cards/input.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+  border: 1px solid #ccc;
+  height: 30px;
+  user-select: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  display: inline-block;
+  width: 30px;
+  line-height: 30px;
+  background: transparent;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input-number-decrement:active,
+.input-number-increment:active {
+  background-image: url(billeder/cards/input.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.input-number-decrement {
+  border-right: none;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.input-number-increment {
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.up {
+  background-image: url(billeder/cards/up.png);
+  background-repeat: no-repeat;
+position: relative;
+z-index: 56;
+background-position: center;
+background-size: 15px;
+}
 
 }
