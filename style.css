@@ -16,6 +16,962 @@ a {
 
     
 
+/* Innertopbar - kort og basket */
+
+.innertopbar {
+  display: flex;
+  position: absolute;
+  left: 52%;
+  padding: 5px 0 24px;
+  text-align: right;
+  margin-right: 10%;
+  z-index: 3;
+  
+}
+
+.skygge {
+    z-index: 1;
+    margin-top: -70px;
+    position: relative;
+    margin-right: 90px;
+}
+
+.infowrapper {
+    display: flex;
+    align-self: center;
+}
+
+.innertoptext {
+  font-family: "Barlow";
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  color: grey;
+  display: flex;
+  position: relative;
+  align-self: center;
+}
+
+
+
+.phoneinfo {
+  display: flex;
+  font-family: "Barlow";
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: grey;
+ padding-right: 30px;
+  position: relative;
+  align-self: center;
+}
+
+/* Logo bar */
+
+.logobar {
+  display: flex;
+ justify-content: space-between;
+  
+  
+  margin-top: 70px;
+  width: 100%;
+}
+
+.searchbar {
+  margin-top: 60px;
+  cursor: pointer;
+  width: 10%;
+  height: 50px;
+}
+
+.logowrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 100%;
+}
+
+.ikoner-L {
+  display: inline-flex;
+  margin-top: 70px;
+  float: left;
+ margin-right: 40px;
+  
+}
+
+
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-facebook {
+  display:block;
+  margin:10px 5px auto 5px;
+  cursor: pointer;
+  background-image: url(billeder/facebook.png);
+}
+
+.home {
+  display:block;
+  cursor: pointer;
+  background-image: url(billeder/home.png);
+}
+
+.home:hover,
+.home:focus {
+  background-image: url(billeder/home-hover.png);
+}
+
+.icon-facebook:hover,
+.icon-facebook:focus {
+  background-image: url(billeder/facebook-hover.png);
+}
+
+.icon-vline {
+  display:block;
+  margin:15px 1px auto 1px;
+  cursor: pointer;
+  background-image: url(billeder/mini-line.png);
+  height: 23px;
+}
+
+.icon-instagram {
+  display:block;
+  margin:10px 5px auto -22px;
+  cursor: pointer;
+  background-image: url(billeder/instagram.png);
+}
+
+.icon-instagram:hover,
+.icon-instagram:focus {
+  background-image: url(billeder/instagram-hover.png);
+}
+
+/* Navigationsbar */
+
+.nav-container {
+  display: block;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 99;
+  margin-top: 50px;
+background-color: white;
+top:0;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  -webkit-padding-start: 0;
+}
+
+
+.nav-item {
+  padding: 10px;
+  display: inline;
+  
+}
+
+.nav-items {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item-dropdown {
+  position: relative;
+  z-index: 99;
+}
+.nav-item-dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-trigger {
+  position: relative;
+}
+.dropdown-trigger:focus + .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+.dropdown-trigger::after {
+  content: "›";
+  position: absolute;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+
+  right: 40px;
+  bottom: -15px;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  border-radius: 15px;
+  border: 0.5px solid grey;
+  top: 2.5rem;
+  right: 30px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  width: 160px;
+}
+.dropdown-menu a {
+      text-decoration: none;
+      color: #a6a6a6;
+      font-size: 14px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+    
+      
+}
+
+.dropdown-menu-item {
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+}
+.dropdown-menu-item:hover {
+  background-color: rgb(230, 220, 220);
+  border-radius: 15px;
+}
+
+
+
+
+
+.justify {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+.nav-txt {
+    margin: 0 55px;
+    text-decoration: none;
+    color: #646e82;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    height: 50px;
+    padding-top: 25px;
+    z-index: 99;
+    
+}
+
+
+.nav-txt:hover {
+  background-image: url(billeder/nav-hover.png);
+background-position-y: 5px;
+
+  background-repeat: no-repeat;
+  
+
+}
+
+.LINE {
+  background-color: #fff;
+  min-height: 15px;
+
+}
+
+hr.streg {
+  background-color: #bfc3c6;
+  width: 99.9%;
+  opacity: 0.5;
+  margin-top: 15px;
+  z-index: 55;
+}
+
+
+/* Slider */
+
+
+.carousel {
+  background: #EEE;
+  
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 10px!important;
+  text-align: right!important;
+  width: 80%!important;
+  
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 15px!important;
+  height: 15px!important;
+  opacity: 0.5!important;
+  background: white!important;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: purple!important;
+}
+
+
+.slider-img {
+  width: 101%;
+  height: 600px;
+    object-fit: cover;
+}
+
+.slider-txt {
+   position: absolute;
+   top: 53px;
+   left: 15%;
+  
+}
+
+.lille-h2 {
+  color: white; 
+   font-size: 1.4vw;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 500;
+}
+
+.større-h2 {
+   margin: 1px 0;
+   font-size: 3.5vw;
+   color: white;
+   letter-spacing: 3px;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 700;
+}
+
+.badge {
+   position: absolute;
+left: 62%;
+bottom: 25%;
+   height: 250px;
+   width: 250px;
+   background-image: url(billeder/badge1.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+ 
+}
+
+.læsmere {
+   background-image: url( 'billeder/button.png');
+   background-size: 100% 100%;
+ background-repeat: no-repeat;
+ height: 50px;
+ background-color: transparent;  
+ width: 200px;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ position: absolute;
+ font-size: 18px;
+ font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   color: #fff;
+   letter-spacing: 2.5px;
+position: absolute;
+bottom: 30%;
+left: 15%;
+ -webkit-transition: 0.4s ease-in-out;
+ transition: 0.4s ease-in-out;
+}
+
+.læsmere:hover,
+ .læsmere:focus {
+   background-image: url( 'billeder/button-hover.png' );
+
+   opacity: 1;
+   color: #fff;
+  
+ -webkit-transition: 0.4s ease-in-out;
+ transition: 0.4s ease-in-out;
+   }
+
+/* Nyheder */
+
+
+.nyheder {
+  position: relative;
+  z-index: 1;
+ display: block;
+ margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.nyheder-h3 {
+position: relative;
+z-index: 3;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+font-size: 28px;
+color: #5b6770;
+text-align: center;
+margin-top: -55px;
+letter-spacing: 2.5px;
+}
+
+
+/* Produkt kort */
+
+
+.main{
+max-width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+
+
+
+.main img {
+display: block;
+margin: 10px auto;
+height: auto;
+max-width: 100%;
+}
+
+
+
+.cards {
+display: flex;
+height: 700px;
+width: 1400px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+.cards_item {
+display: flex;
+padding: 1rem;
+justify-content: center;
+justify-items: center;
+}
+
+@media (min-width: 70rem) {
+.cards_item {
+  width: 100%;
+}
+}
+
+@media (min-width: 106rem) {
+.cards_item {
+  width: 33.3333%;
+}
+}
+
+.card {
+background-color: white;
+border-radius: 0.25rem;
+border: 1px solid #bfc3c6;
+display: flex;
+-moz-transition: width 0.3s ease-in-out;
+-o-transition: width 0.3s ease-in-out;
+-webkit-transition: width 0.3s ease-in-out;
+transition: width 1.3s ease-in-out;
+flex-direction: column;
+overflow: hidden;
+}
+
+
+
+.card_content {
+position: relative;
+height: 700px;
+
+}
+
+
+
+.nyhed {
+position: absolute;
+z-index: 44;
+top: -242px;
+left: -1px;
+}
+
+
+
+.card_title {
+color: #ffffff;
+font-family: 'Ubuntu', sans-serif;
+font-size: 1.1rem;
+font-weight: 700;
+letter-spacing: 1px;
+margin: 0px;
+padding-top: 10px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.bg {
+background-image: url(billeder/cards/headline.png);
+background-size: 100% 100%;
+height: 50px;
+
+}
+
+.card_text {
+color: #ffffff;
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 400;
+}
+
+
+.pris {
+position: relative;
+z-index: 1;
+display: block;
+margin: 0 auto;
+
+}
+
+.pris-p {
+position: relative;
+z-index: 3;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 500;
+font-size: 20px;
+color: #5b6770;
+text-align: center;
+margin-top: -45px;
+letter-spacing: 2.5px;
+}
+
+.lager {
+position: relative;
+z-index: 1;
+display: block;
+margin: 0 auto;
+
+}
+
+.lager-p {
+position: relative;
+z-index: 3;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+font-size: 10px;
+color: #5b6770;
+text-align: center;
+margin-top: -35px;
+letter-spacing: 2.5px;
+}
+
+
+
+
+.clickable {
+display: flex;
+justify-content: space-around;
+
+
+
+
+}
+
+.clickable-nostock {
+display: flex;
+justify-content: center;
+
+
+
+
+}
+
+.ikoner {
+display: inline-block;
+width: 50px;
+height: 50px;
+pointer-events: visible;
+background-size: cover;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.infoknap {
+display:block;
+margin:60px 5px auto 5px;
+cursor: pointer;
+
+background-image: url(billeder/cards/info.png);
+}
+.infoknap:hover,
+.infoknap:focus {
+width: 190px;
+height: 55px;
+margin:60px -5px auto 0px;
+background-image: url(billeder/cards/info-hover.png);
+}
+
+.kurvknap {
+display:block;
+margin:60px 5px auto 5px;
+cursor: pointer;
+background-image: url(billeder/cards/kurv.png);
+}
+.kurvknap:hover,
+.kurvknap:focus {
+width: 185px;
+height: 55px;
+margin:60px 0px auto -5px;
+background-image: url(billeder/cards/kurv-hover.png);
+}
+
+.tilbud {
+position: relative;
+z-index: 11;
+display: block;
+margin: 0 auto;
+
+}
+
+.tilbud-p {
+position: relative;
+z-index: 13;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 700;
+font-size: 10px;
+color: #5b6770;
+text-align: center;
+margin-top: -25px;
+text-decoration: #904957 line-through;
+letter-spacing: 2.5px;
+}
+
+
+.input-number {
+width: 60px;
+padding: 0 12px;
+text-align: center;
+outline: none;
+border-radius: 4px 0 0 4px;
+background-image: url(billeder/cards/input.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+color: black;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+border: 1px solid #ccc;
+height: 30px;
+user-select: none;
+border-radius: 4px 0 0 4px;
+color: black;
+}
+
+.input-number-decrement,
+.input-number-increment {
+display: inline-block;
+width: 30px;
+line-height: 30px;
+background: transparent;
+color: transparent;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+}
+.input-number-decrement:active,
+.input-number-increment:active {
+background-image: url(billeder/cards/input.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.input-number-decrement {
+border-right: none;
+border-radius: 20px 0px 0px 20px;
+}
+
+.input-number-increment {
+border-left: none;
+border-radius: 0px 20px 20px 0px;
+}
+
+.up {
+background-image: url(billeder/cards/up.png);
+background-repeat: no-repeat;
+position: relative;
+z-index: 56;
+background-position: center;
+background-size: 15px;
+}
+
+.down {
+background-image: url(billeder/cards/down.png);
+background-repeat: no-repeat;
+position: relative;
+z-index: 56;
+background-position: center;
+background-size: 15px;
+}
+
+.inputfelt {
+padding-left: 45px;
+}
+
+
+/* Footer*/
+
+.footer {
+background-color: #353e4f;
+margin-top: 80px;
+height: 500px;
+background-image: url(billeder/footer/hjerte.png);
+background-repeat: no-repeat;
+background-position-y: 12px;
+background-size: 100% 97%;
+}
+
+.thinbar {
+max-width: 100%;
+height: auto;
+}
+
+
+
+.logoimg {
+position: absolute;
+bottom: 350px;
+right: 27%;
+max-width: 100%;
+height: auto;
+
+}
+
+.navn {
+
+position: absolute;
+bottom: 335px;
+right: 10%;
+letter-spacing: 2px;
+color: #878f9c;
+font-size: 14px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+}
+
+.footer-logo {
+position: absolute;
+bottom: 450px;
+right: 10%;
+}
+
+.slider-adresse {
+position: absolute;
+display: block;
+right: 10%;
+bottom: 150px;
+
+}
+
+.slider-adresse img {
+display: block;
+margin-bottom: 20px;
+}
+
+.adresse {
+display: block;
+text-align: right;
+letter-spacing: 2px;
+color: #878f9c;
+font-size: 14px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+
+}
+
+.adresse-tlf {
+display: block;
+text-align: right;
+letter-spacing: 2px;
+color: #878f9c;
+font-size: 22px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+
+}
+
+.footer-line {
+display: block;
+width: 80%;
+height: auto;
+position: absolute;
+bottom: 3.5%;
+left: 10%;
+}
+
+.bund-line {
+
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom: 1%;
+max-width: 100%;
+height: auto;
+}
+
+.span-margin {
+margin: 0px 30px;
+}
+
+.footer-info {
+position: absolute;
+display: block;
+left: 10%;
+bottom: 5%;
+pointer-events: none;
+}
+
+.footer-info img{
+display: block;
+margin-top: 50px;
+}
+
+.footer-info p{
+display: block;
+margin-top: 50px;
+letter-spacing: 2px;
+color: #878f9c;
+font-size: 14px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+}
+
+.info-footer {
+display: block;
+text-align: left;
+letter-spacing: 2px;
+color: #9fc2d8;
+font-size: 0.8vw;
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+
+}
+
+.info-footer strong {
+font-family: 'Barlow', sans-serif;
+font-weight: 400;
+letter-spacing: 2.5px;
+
+}
+
+.info-footer a {
+text-decoration: none;
+color: #9fc2d8;
+}
+
+
+
+button {
+padding-top: 10px;
+padding-bottom: 9px;
+}
+
+
+.handelsbetingelser {
+background-image: url( 'billeder/footer/button.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+height: 40px;
+background-color: transparent;  
+width: 250px;
+border: none;
+outline: none;
+cursor: pointer;
+position: absolute;
+font-size: 15px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+color: #878f9c;
+letter-spacing: 1.5px;
+position: absolute;
+left: 10%;
+bottom: 10.5%;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.handelsbetingelser:hover,
+.handelsbetingelser:focus {
+background-image: url( 'billeder/footer/button-hover.png' );
+
+opacity: 1;
+color: #fff;
+
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.dropdown-menu > li.more > a {
+  padding-left:5px;
+}
+
+.dropdown-submenu {
+  position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+ top:0;left:100%;
+ margin-top:-6px;margin-left:-1px;
+ -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu > a:after {
+border-color: transparent transparent transparent #333;
+border-style: solid;
+border-width: 5px 0 5px 5px;
+content: " ";
+display: block;
+float: right;  
+height: 0;     
+margin-right: -10px;
+margin-top: 5px;
+width: 0;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color:#555;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+text-decoration: none;
+}  
+/* footer slut*/
 
 
 }
@@ -48,8 +1004,7 @@ a {
     background-repeat: no-repeat;
 
  background-size: 100%;
-z-index: 99;
-position: relative;
+
 pointer-events: none;
 }
 
@@ -123,7 +1078,7 @@ pointer-events: none;
   }
 
   .skygge {
-      z-index: 99;
+      z-index: 1;
       margin-top: -70px;
       position: relative;
       margin-right: 90px;
@@ -249,7 +1204,7 @@ pointer-events: none;
     display: block;
     position: sticky;
     position: -webkit-sticky;
-    z-index: 98;
+    z-index: 99;
     margin-top: 50px;
   background-color: white;
   top:0;
@@ -773,6 +1728,7 @@ letter-spacing: 2.5px;
   background-image: url(billeder/cards/input.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  color: black;
 }
 
 .input-number,
@@ -782,6 +1738,7 @@ letter-spacing: 2.5px;
   height: 30px;
   user-select: none;
   border-radius: 4px 0 0 4px;
+  color: black;
 }
 
 .input-number-decrement,
@@ -790,7 +1747,7 @@ letter-spacing: 2.5px;
   width: 30px;
   line-height: 30px;
   background: transparent;
-  color: #444;
+  color: transparent;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
@@ -820,5 +1777,217 @@ z-index: 56;
 background-position: center;
 background-size: 15px;
 }
+
+.down {
+  background-image: url(billeder/cards/down.png);
+  background-repeat: no-repeat;
+position: relative;
+z-index: 56;
+background-position: center;
+background-size: 15px;
+}
+
+.inputfelt {
+  padding-left: 45px;
+}
+
+
+/* Footer*/
+
+.footer {
+  background-color: #353e4f;
+  margin-top: 80px;
+  height: 500px;
+  background-image: url(billeder/footer/hjerte.png);
+  background-repeat: no-repeat;
+  background-position-y: 12px;
+  background-size: 100% 97%;
+}
+
+.thinbar {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.logoimg {
+  position: absolute;
+  bottom: 350px;
+  right: 27%;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.navn {
+  
+  position: absolute;
+  bottom: 335px;
+  right: 10%;
+  letter-spacing: 2px;
+  color: #878f9c;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 450px;
+  right: 10%;
+}
+
+.slider-adresse {
+  position: absolute;
+  display: block;
+  right: 10%;
+  bottom: 150px;
+ 
+}
+
+.slider-adresse img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.adresse {
+  display: block;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #878f9c;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+
+}
+
+.adresse-tlf {
+  display: block;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #878f9c;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+
+}
+
+.footer-line {
+  display: block;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  bottom: 3.5%;
+  left: 10%;
+}
+
+.bund-line {
+  
+  position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom: 1%;
+  max-width: 100%;
+  height: auto;
+}
+
+.span-margin {
+  margin: 0px 30px;
+}
+
+.footer-info {
+  position: absolute;
+  display: block;
+  left: 10%;
+  bottom: 5%;
+ pointer-events: none;
+}
+
+.footer-info img{
+  display: block;
+  margin-top: 50px;
+}
+
+.footer-info p{
+  display: block;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  color: #878f9c;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.info-footer {
+  display: block;
+  text-align: left;
+  letter-spacing: 2px;
+  color: #9fc2d8;
+  font-size: 0.8vw;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+
+}
+
+.info-footer strong {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+ 
+}
+
+.info-footer a {
+  text-decoration: none;
+  color: #9fc2d8;
+}
+
+
+
+button {
+  padding-top: 10px;
+  padding-bottom: 9px;
+}
+
+
+.handelsbetingelser {
+  background-image: url( 'billeder/footer/button.png');
+  background-size: 100% 100%;
+background-repeat: no-repeat;
+height: 40px;
+background-color: transparent;  
+width: 250px;
+border: none;
+outline: none;
+cursor: pointer;
+position: absolute;
+font-size: 15px;
+font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #878f9c;
+  letter-spacing: 1.5px;
+position: absolute;
+left: 10%;
+  bottom: 10.5%;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.handelsbetingelser:hover,
+.handelsbetingelser:focus {
+  background-image: url( 'billeder/footer/button-hover.png' );
+
+  opacity: 1;
+  color: #fff;
+ 
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+  }
+
+
+/* footer slut*/
+
 
 }
