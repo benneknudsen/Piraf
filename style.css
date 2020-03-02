@@ -12,6 +12,133 @@ a {
     text-decoration: none;
 }
 
+@media (max-width:1170px) {
+  .main-menu {
+    height:50px;
+    background-color: white;
+    position: sticky;
+    z-index: 99;
+    top: 0; 
+ 
+
+  }
+.home {
+display: block;
+margin: 0 auto;
+  text-align: center;
+    cursor: pointer;
+    background-image: url(billeder/home.png);
+  }
+  
+  .home:hover,
+  .home:focus {
+    background-image: url(billeder/home-hover.png);
+  }
+
+
+  .container-menu {
+    width:100%;
+  }
+  .navigation {
+    float:left;
+    display:block;
+    width:100%;
+  }
+  .core-menu {
+    float:right;
+    width:100%;
+    height: 1000px;
+    background:#646f82;
+    margin:auto;
+    display:none;
+  }
+  
+  .core-menu li {
+    width:100%;
+    display:block;
+  }
+  .core-menu li a{
+    display:block;
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 30px 0px;
+    text-align: center;
+    color: white;
+    
+  }
+  .hamburger-menu {
+    display:block;
+    text-align:center;
+    
+    float:none;
+    width:100%;
+  }
+  .burger-1, .burger-2, .burger-3 {
+  display:block;
+  position:absolute;
+  width:20px;
+  height:3px;
+  border-radius:30px;
+  right:0;
+  margin-right:25px;
+  background:#555;
+    -webkit-transition:.2s ease;
+    -ms-transition:.2s ease;
+    -moz-transition:.2s ease;
+    -o-transition:.2s ease;
+  transition:.2s ease; 
+  }
+  .burger-1 {
+  top:15px;
+  }
+  .burger-2 {
+  top:23px;
+  }
+  .burger-3 {
+  top:31px;
+  }
+  .burger-1.open, .burger-2.open, .burger-3.open {
+  -webkit-transition:.2s ease;
+  -ms-transition:.2s ease;
+  -moz-transition:.2s ease;
+  -o-transition:.2s ease;
+    transition:.2s ease;
+    transform-origin:50% 50%;
+  }
+  .burger-1.open {
+    top:25px;
+    width:23px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg); 
+    -ms-transform:rotate(45deg); 
+    -moz-transform:rotate(45deg); 
+    -o-transform:rotate(45deg); 
+  }
+  .burger-2.open {
+    opacity:0;
+  }
+  .burger-3.open {
+    top:25px;
+    width:23px;
+    transform:rotate(-45deg);
+  }
+  .dropdown {
+    width:100%;
+    background:#0e0e0e;
+    text-align:center;
+    position:relative;
+  }
+  .dropdown2 {
+    right:0;
+    top:0;
+    width:100%;
+    position:relative;
+    padding:0 20px;
+}
+}
+
 @media only screen and (min-width: 300px) {
 
     
@@ -19,14 +146,16 @@ a {
 /* Innertopbar - kort og basket */
 
 .innertopbar {
-  display: flex;
-  position: absolute;
-  left: 52%;
-  padding: 5px 0 24px;
-  text-align: right;
-  margin-right: 10%;
-  z-index: 3;
+ display: none;
   
+}
+
+.innertopbar-mobil {
+  display: block;
+}
+
+.topbar {
+  display: none;
 }
 
 .skygge {
@@ -67,18 +196,17 @@ a {
 /* Logo bar */
 
 .logobar {
-  display: flex;
- justify-content: space-between;
-  
-  
-  margin-top: 70px;
-  width: 100%;
+ display: none;
+}
+
+.logobar-mobil {
+  display: block;
 }
 
 .searchbar {
-  margin-top: 60px;
+  margin-top: 60px!important;
   cursor: pointer;
-  width: 10%;
+  width: 50%;
   height: 50px;
 }
 
@@ -89,18 +217,28 @@ a {
     width: 100%;
 }
 
+.logowrapper-mobil {
+ display: block;
+  width: 100%;
+}
+
 .ikoner-L {
   display: inline-flex;
-  margin-top: 70px;
-  float: left;
- margin-right: 40px;
+  margin-top: -10px;
+  float: right;
+ margin-right: 10px;
   
 }
 
-
+.logobar-mobil img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
 
 .icon {
-  display: inline-block;
+  display:block;
   width: 40px;
   height: 30px;
   background-size: contain;
@@ -114,16 +252,7 @@ a {
   background-image: url(billeder/facebook.png);
 }
 
-.home {
-  display:block;
-  cursor: pointer;
-  background-image: url(billeder/home.png);
-}
 
-.home:hover,
-.home:focus {
-  background-image: url(billeder/home-hover.png);
-}
 
 .icon-facebook:hover,
 .icon-facebook:focus {
@@ -149,104 +278,6 @@ a {
 .icon-instagram:focus {
   background-image: url(billeder/instagram-hover.png);
 }
-
-/* Navigationsbar */
-
-.nav-container {
-  display: block;
-  position: sticky;
-  position: -webkit-sticky;
-  z-index: 99;
-  margin-top: 50px;
-background-color: white;
-top:0;
-  width: 100%;
-}
-
-ul,
-li {
-  list-style: none;
-  -webkit-padding-start: 0;
-}
-
-
-.nav-item {
-  padding: 10px;
-  display: inline;
-  
-}
-
-.nav-items {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-item-dropdown {
-  position: relative;
-  z-index: 99;
-}
-.nav-item-dropdown:hover > .dropdown-menu {
-  display: block;
-  opacity: 1;
-}
-
-.dropdown-trigger {
-  position: relative;
-}
-.dropdown-trigger:focus + .dropdown-menu {
-  display: block;
-  opacity: 1;
-}
-.dropdown-trigger::after {
-  content: "›";
-  position: absolute;
-  color: #a6a6a6;
-  font-size: 16px;
-  font-weight: bold;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-
-  right: 40px;
-  bottom: -15px;
-}
-
-.dropdown-menu {
-  background-color: #fff;
-  display: inline-block;
-  text-align: right;
-  position: absolute;
-  border-radius: 15px;
-  border: 0.5px solid grey;
-  top: 2.5rem;
-  right: 30px;
-  display: none;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-  width: 160px;
-}
-.dropdown-menu a {
-      text-decoration: none;
-      color: #a6a6a6;
-      font-size: 14px;
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 500;
-    
-      
-}
-
-.dropdown-menu-item {
-  cursor: pointer;
-  padding: 1em;
-  text-align: center;
-}
-.dropdown-menu-item:hover {
-  background-color: rgb(230, 220, 220);
-  border-radius: 15px;
-}
-
 
 
 
@@ -938,39 +969,7 @@ color: #fff;
 transition: 0.4s ease-in-out;
 }
 
-.dropdown-menu > li.more > a {
-  padding-left:5px;
-}
 
-.dropdown-submenu {
-  position:relative;
-}
-.dropdown-submenu>.dropdown-menu {
- top:0;left:100%;
- margin-top:-6px;margin-left:-1px;
- -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
-}
-
-.dropdown-submenu > a:after {
-border-color: transparent transparent transparent #333;
-border-style: solid;
-border-width: 5px 0 5px 5px;
-content: " ";
-display: block;
-float: right;  
-height: 0;     
-margin-right: -10px;
-margin-top: 5px;
-width: 0;
-}
-
-.dropdown-submenu:hover>a:after {
-  border-left-color:#555;
-}
-
-.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
-text-decoration: none;
-}  
 /* footer slut*/
 
 
@@ -979,6 +978,183 @@ text-decoration: none;
 @media only screen and (min-width: 1170px) {
 
 /* Top bar */
+
+.main-menu {
+  display:block;
+  position:relative;
+  background:white;
+  z-index: 99;
+  position: sticky;
+  position: -webkit-sticky;
+ 
+}
+.container-menu {
+  width:90%;
+  margin:0 auto;
+}
+.main-menu:before,.main-menu:after{
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.core-menu {
+  text-align:center;
+  font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+  overflow:hidden;
+  margin-top: 30px;
+}
+.core-menu li {
+  list-style:none;
+  display:inline-block;
+  cursor:pointer;
+  margin: 0px 1%;
+  
+}
+.core-menu li a {
+  font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+color: #646e82;
+  display:inline-block;
+  padding:1em;
+}
+.core-menu li a:hover {
+  background-image: url(billeder/nav-hover.png);
+  background-repeat: no-repeat;
+}
+li span.toggle {
+  padding-left:1em;
+}
+.toggle:before {
+  content:"\f107";
+  font:normal normal normal 16px/1 FontAwesome;
+}
+
+/* Dropdown menuer i navigations header */
+
+.dropdown {
+  border-radius: 32px;
+  position:absolute;
+  width:230px;
+  background: white;
+  text-align:left;
+  display:none;
+  background-image: url(billeder/menu-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+.dropdown li {
+  display:block;
+  }
+.dropdown li a {
+  display:block;
+}
+.dropdown li a:hover {
+  background-image: url(billeder/nyheder.png);
+  color: black;
+  background-repeat: no-repeat;
+}
+
+.dropdown2 {
+  position:absolute;
+  width:230px;
+  background-image: url(billeder/dropdown2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background:#fff;
+  text-align:left;
+  display:none;
+  right:-100%;
+  top:160px;
+  z-index: 99;
+}
+.dropdown2 li {
+  display:block;
+  }
+.dropdown2 li a {
+  display:block;
+}
+
+.dropdown3 {
+  position:absolute;
+  width:230px;
+  background-image: url(billeder/dropdown2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background:#fff;
+  text-align:left;
+  display:none;
+  right:-100%;
+  top:400px;
+  z-index: 99;
+}
+.dropdown3 li {
+  display:block;
+  }
+.dropdown3 li a {
+  display:block;
+}
+
+.dropdown4 {
+  position:absolute;
+  width:230px;
+  background-image: url(billeder/dropdown2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background:#fff;
+  text-align:left;
+  display:none;
+  right:-100%;
+  top:650px;
+  z-index: 99;
+}
+.dropdown4 li {
+  display:block;
+  }
+.dropdown4 li a {
+  display:block;
+}
+
+.dropdown5 {
+  position:absolute;
+  width:230px;
+  background-image: url(billeder/dropdown2.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background:#fff;
+  text-align:left;
+  display:none;
+  right:-100%;
+  top:850px;
+  z-index: 99;
+}
+.dropdown5 li {
+  display:block;
+  }
+.dropdown5 li a {
+  display:block;
+}
+
+/* Dropdown menuer i navigations header */
+
+li span.toggle2 {
+  position:absolute;
+  right:0;
+  margin-right:20px;
+}
+.toggle2:before {
+  content:"\f105";
+  font:normal normal normal 16px/1 FontAwesome;
+}
+.hamburger-menu {
+  padding:1em;
+  display:none;
+  font:normal normal normal 16px/1 Roboto;
+  text-transform:uppercase;
+}
+
+
 
  .topbar {
     display: block;
@@ -1077,6 +1253,10 @@ pointer-events: none;
     
   }
 
+  .innertopbar-mobil {
+    display: none;
+  }
+
   .skygge {
       z-index: 1;
       margin-top: -70px;
@@ -1123,6 +1303,10 @@ pointer-events: none;
     width: 100%;
   }
 
+  .logobar-mobil {
+    display: none;
+  }
+
 .searchbar {
     margin-top: 60px;
     cursor: pointer;
@@ -1163,7 +1347,8 @@ pointer-events: none;
   }
 
   .home {
-    display:block;
+    position: relative;
+   margin-bottom: -10px;
     cursor: pointer;
     background-image: url(billeder/home.png);
   }
