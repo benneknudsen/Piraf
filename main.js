@@ -46,16 +46,16 @@
       $(".core-menu li").hover(
       function(){
         //i used the parent ul to show submenu
-          $(this).children('ul').slideDown('500');
+          $(this).children('ul').slideDown('750');
       }, 
         //when the cursor away 
       function () {
-          $('ul', this).slideUp('500');
+          $('ul', this).slideUp('750');
       });
-    //this feature only show on 600px device width
+    //this feature only show on 750px device width
       $(".hamburger-menu").click(function(){
         $(".burger-1, .burger-2, .burger-3").toggleClass("open");
-          $(".core-menu").slideToggle("500");
+          $(".core-menu").slideToggle("750");
       });
   });
 

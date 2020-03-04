@@ -371,6 +371,7 @@ color: #646f82;
 
 .innertopbar-mobil {
   display: block;
+  margin-bottom: 50px;
 }
 
 .topbar {
@@ -430,7 +431,7 @@ color: #646f82;
 }
 
 .logowrapper {
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     align-self: center;
     width: 100%;
@@ -443,7 +444,7 @@ color: #646f82;
 
 .ikoner-L {
   display: inline-flex;
-  margin-top: 20px;
+  margin-top: -50px;
   float: right;
  margin-right: 10px;
   
@@ -725,7 +726,7 @@ font-weight: 300;
 font-size: 24px;
 color: #5b6770;
 text-align: center;
-margin-top: -45px;
+margin-top: -55px;
 letter-spacing: 2.5px;
 }
 
@@ -1042,41 +1043,48 @@ padding-left: 45px;
 /* Footer*/
 
 .footer {
-background-color: #353e4f;
-margin-top: 80px;
-height: 500px;
-background-image: url(billeder/footer/hjerte.png);
-background-repeat: no-repeat;
-background-position-y: 12px;
-background-size: 100% 97%;
+display: none;
 }
 
-.thinbar {
+.footer-mobil {
+  display: block;
+  background-color: #353e4f;
+  margin-top: 80px;
+  height: 600px;
+width: 100.5%;
+  }
+
+.footer-mobil .thinbar {
+display: none;
+}
+
+
+
+.footer-mobil .logoimg {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 500px;
 max-width: 100%;
 height: auto;
-}
-
-
-
-.logoimg {
-position: absolute;
-bottom: 350px;
-right: 27%;
-max-width: 100%;
-height: auto;
 
 }
 
-.navn {
-
+.footer-mobil .navn {
 position: absolute;
-bottom: 335px;
-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 420px;
 letter-spacing: 2px;
 color: #878f9c;
-font-size: 14px;
+font-size: 20px;
+text-align: center;
 font-family: 'Ubuntu', sans-serif;
-font-weight: 300;
+font-weight: 400;
 }
 
 .footer-logo {
@@ -1085,17 +1093,53 @@ bottom: 450px;
 right: 10%;
 }
 
-.slider-adresse {
-position: absolute;
-display: block;
-right: 10%;
-bottom: 150px;
+.footer-mobil .slider-adresse {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+ 
+
+
+bottom: 250px;
 
 }
 
-.slider-adresse img {
-display: block;
-margin-bottom: 20px;
+.footer-mobil .slider-adresse img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 230px;
+  max-width: 90%;
+  height: auto;
+}
+
+.footer-mobil .linje1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 240px;
+  
+  max-width: 90%;
+  height: auto;
+}
+
+
+.footer-mobil .linje2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  
+  max-width: 90%;
+  height: auto;
 }
 
 .adresse {
@@ -1106,12 +1150,13 @@ color: #878f9c;
 font-size: 14px;
 font-family: 'Ubuntu', sans-serif;
 font-weight: 300;
+text-align: center;
 
 }
 
 .adresse-tlf {
 display: block;
-text-align: right;
+text-align: center;
 letter-spacing: 2px;
 color: #878f9c;
 font-size: 22px;
@@ -1129,67 +1174,46 @@ bottom: 3.5%;
 left: 10%;
 }
 
-.bund-line {
+.footer-mobil .bund-line {
 
-position: absolute;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-bottom: 1%;
-max-width: 100%;
-height: auto;
+display: none;
 }
 
 .span-margin {
 margin: 0px 30px;
 }
 
-.footer-info {
-position: absolute;
-display: block;
-left: 10%;
-bottom: 5%;
+.footer-mobil .footer-info {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
 pointer-events: none;
 }
 
-.footer-info img{
-display: block;
-margin-top: 50px;
+.footer-mobil .footer-info img{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 80px;
 }
 
-.footer-info p{
+.footer-mobil .footer-info p{
 display: block;
-margin-top: 50px;
+margin-top: -40px;
 letter-spacing: 2px;
 color: #878f9c;
 font-size: 14px;
 font-family: 'Ubuntu', sans-serif;
 font-weight: 300;
-}
-
-.info-footer {
-display: block;
-text-align: left;
-letter-spacing: 2px;
-color: #9fc2d8;
-font-size: 0.8vw;
-font-family: 'Barlow', sans-serif;
-font-weight: 300;
+text-align: center;
 
 }
 
-.info-footer strong {
-font-family: 'Barlow', sans-serif;
-font-weight: 400;
-letter-spacing: 2.5px;
-
-}
-
-.info-footer a {
-text-decoration: none;
-color: #9fc2d8;
-}
 
 
 
@@ -1199,25 +1223,28 @@ padding-bottom: 9px;
 }
 
 
-.handelsbetingelser {
+.footer-mobil .handelsbetingelser {
 background-image: url( 'billeder/footer/button.png');
 background-size: 100% 100%;
 background-repeat: no-repeat;
-height: 40px;
+height: 60px;
 background-color: transparent;  
-width: 250px;
+max-width: 150%;
 border: none;
 outline: none;
 cursor: pointer;
-position: absolute;
-font-size: 15px;
+font-size: 22px;
 font-family: 'Ubuntu', sans-serif;
 font-weight: 400;
 color: #878f9c;
 letter-spacing: 1.5px;
 position: absolute;
-left: 10%;
-bottom: 10.5%;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+
+bottom: 170px;
 -webkit-transition: 0.4s ease-in-out;
 transition: 0.4s ease-in-out;
 }
@@ -1944,6 +1971,8 @@ letter-spacing: 2.5px;
 }
 
 
+
+
  /* Produkt kort */
 
  .main-mobil {
@@ -2256,6 +2285,7 @@ background-size: 15px;
 /* Footer*/
 
 .footer {
+  display: block;
   background-color: #353e4f;
   margin-top: 80px;
   height: 500px;
@@ -2265,6 +2295,10 @@ background-size: 15px;
   background-size: 100% 97%;
 }
 
+.footer-mobil {
+  display: none;
+}
+
 .thinbar {
   max-width: 100%;
   height: auto;
@@ -2272,7 +2306,7 @@ background-size: 15px;
 
 
 
-.logoimg {
+.footer .logoimg {
   position: absolute;
   bottom: 350px;
   right: 27%;
@@ -2281,7 +2315,7 @@ background-size: 15px;
   
 }
 
-.navn {
+.footer .navn {
   
   position: absolute;
   bottom: 335px;
