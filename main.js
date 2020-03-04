@@ -134,4 +134,17 @@
       $('.roter1').toggleClass('ned');
     });
   });
+
+  $(document).ready(function () {
+    $('.arrow2').click(function () {
+      $('.roter2').toggleClass('ned');
+    });
+  });
+
+  $(document).ready(function () {
+    $('.arrow3').click(function () {
+      $('.roter3').toggleClass('ned');
+    });
+  });
+  
   

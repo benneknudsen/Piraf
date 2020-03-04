@@ -56,7 +56,7 @@ top: 15px;
   width: 60px;
   height: 5px;
   position: relative;
-  margin: 20px -55px auto auto;
+  margin: 22px -57px auto auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -155,15 +155,25 @@ top: 15px;
   position: fixed;
 top: 70px;
   right: -130%;
-  height: 90%;
+  height: 92%;
   width: 100%;
-  background-color: #fff;
+  background-color: #646f82;
   background-repeat: no-repeat;
  
   overflow-x: hidden;
-  padding: 20px;
+ 
   -webkit-overflow-scrolling: touch;
 
+}
+
+#drawerm ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 
 /* actual page content pane */
@@ -200,27 +210,31 @@ margin-left: 10px;
 
 }  
 
+#drawerm .cart {
+  padding-bottom: 50px;
+}
+
 #drawerm ul {
   list-style-type: none;
-  margin: 70px 10px 0px 105px;
-  font-family: 'Barlow', sans-serif;
+ 
+  font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
-  font-weight: 400;
-  background-color: #fff;
+  font-weight: 300;
+  text-align: center;
+  background-color: #646f82;
   
 }
 
 #drawerm ul a {
   display: block;
   padding: 20px;
-  color: #7191a3;
+  color: #c2c5cc;
   text-decoration: none;
 }
 
 #drawerm  {
-  display: block;
-  padding: 35px;
-  color: #7191a3;
+  display: block; 
+  color: #c2c5cc;
   text-decoration: none;
 }
 
@@ -236,19 +250,43 @@ margin-left: 10px;
 }
 
 .dropdown-btn-m {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   padding: 20px;
-  color: #7191a3;
-  font-weight: 400;
+  color: #c2c5cc;
+  font-weight: 300;
   text-decoration: none;
   font-size: 24px;
   display: block;
   border: none;
   background: none;
-  width: 150%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   cursor: pointer;
   outline: none;
+}
+
+#drawerm ul a:before {
+  content: url('billeder/navigation/ICON.png');
+  font: normal normal normal 8px/1 FontAwesome;
+  position: static;
+ margin-right: 10px;
+ 
+  letter-spacing: 1.4px;
+  color: #dadee5;
+}
+
+#drawerm img:before {
+  display: none;
+}
+
+#dropdown-btn-m button:before {
+  content: url('billeder/navigation/ICON.png');
+  font: normal normal normal 8px/1 FontAwesome;
+  position: static;
+ margin-right: 10px;
+ 
+  letter-spacing: 1.4px;
+  color: #dadee5;
 }
 
 .dropdown-btn-m:hover {
@@ -259,10 +297,10 @@ margin-left: 10px;
 
 .dropdown-container-m {
   display: none;
-  background-color: #fff;
+  background-color: #646f82;
  
   font-size: 14px;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -294,6 +332,37 @@ margin-left: 10px;
 }
 
 .roter1.ned{
+  -moz-transform:rotate(-180deg);
+  -webkit-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  transform-origin: center center;
+ 
+
+}
+
+
+.roter2{
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.roter2.ned{
+  -moz-transform:rotate(-180deg);
+  -webkit-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  transform-origin: center center;
+ 
+
+}
+
+.roter3{
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.roter3.ned{
   -moz-transform:rotate(-180deg);
   -webkit-transform:rotate(-180deg);
   transform:rotate(-180deg);
@@ -527,7 +596,7 @@ color: #646f82;
 }
 
 .innertoptext {
-  font-family: "Barlow";
+  font-family: "Ubuntu";
   font-size: 14px;
   letter-spacing: 1.2px;
   color: grey;
@@ -540,7 +609,7 @@ color: #646f82;
 
 .phoneinfo {
   display: flex;
-  font-family: "Barlow";
+  font-family: "Ubuntu";
   font-size: 18px;
   letter-spacing: 1.2px;
   color: grey;
@@ -1728,7 +1797,7 @@ pointer-events: none;
   }
   
   .innertoptext {
-    font-family: "Barlow";
+    font-family: "Ubuntu";
     font-size: 14px;
     letter-spacing: 1.2px;
     color: grey;
@@ -1741,7 +1810,7 @@ pointer-events: none;
 
   .phoneinfo {
     display: flex;
-    font-family: "Barlow";
+    font-family: "Ubuntu";
     font-size: 18px;
     letter-spacing: 1.2px;
     color: grey;
@@ -2590,13 +2659,13 @@ bottom: 1%;
   letter-spacing: 2px;
   color: #9fc2d8;
   font-size: 0.8vw;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 
 }
 
 .info-footer strong {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   letter-spacing: 2.5px;
  
