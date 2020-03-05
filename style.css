@@ -371,6 +371,21 @@ margin-left: 10px;
 
 }
 
+.roter4{
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.roter4.ned{
+  -moz-transform:rotate(-180deg);
+  -webkit-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  transform-origin: center center;
+ 
+
+}
+
 @keyframes fadeIn {
   0% {
       opacity: 0;
@@ -954,7 +969,7 @@ font-weight: 300;
 font-size: 22px;
 color: #5b6770;
 text-align: center;
-margin-top: -50px;
+margin-top: -45px;
 letter-spacing: 2.5px;
 }
 
@@ -1492,6 +1507,68 @@ transition: 0.4s ease-in-out;
 /* footer slut*/
 
 
+/* Om os - mobil*/
+
+.shadow-nav {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.omos_h3 {
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+font-size: 22px;
+color: #43494c;
+margin-top: 50px;
+letter-spacing: 2px;
+}
+
+.omos_dot {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.omos_p {
+ padding-top: 50px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6d6e73;
+  margin-top: 50px;
+  letter-spacing: 1.5px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  }
+
+  .omos_p strong {
+ font-weight: 300;
+     font-size: 20px;
+
+     }
+
+     .omos_image {
+       padding-top: 80px;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+     }
+
+     .omos_linje {
+      padding-top: 40px;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+     }
 }
 
 @media only screen and (min-width: 1170px) {
@@ -2721,5 +2798,69 @@ transition: 0.4s ease-in-out;
 
 /* footer slut*/
 
+
+/* --------!!!!!!OM OS SIDE!!!!---------*/
+
+
+.shadow-nav {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.omos_h3 {
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+font-size: 22px;
+color: #43494c;
+margin-top: 50px;
+letter-spacing: 2px;
+}
+
+.omos_dot {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.omos_p {
+ padding-top: 50px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6d6e73;
+  margin-top: 50px;
+  letter-spacing: 1.5px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  }
+
+  .omos_p strong {
+ font-weight: 300;
+     font-size: 20px;
+
+     }
+
+     .omos_image {
+       padding-top: 80px;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+     }
+
+     .omos_linje {
+      padding-top: 40px;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+     }
 
 }
