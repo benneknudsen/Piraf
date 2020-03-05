@@ -1569,6 +1569,190 @@ letter-spacing: 2px;
       max-width: 100%;
       height: auto;
      }
+
+
+
+
+/* --------!!!!!!KONTAKT SIDE!!!!---------*/
+
+
+.content{
+  padding-top: 100px;
+	position: relative;
+	top: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.contact{
+	width: 80%;
+	max-width: 1080px;
+	display: flex;
+  border-top: 1px solid #bfc3c6;
+ overflow: hidden;
+}
+
+
+.other{
+	width: 50%;
+	background-image: url(billeder/HALFSHADOW.png);
+	background-size: contain;
+	background-position-x: 90%;
+  position: relative;
+  background-repeat: no-repeat;
+	display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+
+
+
+
+
+.kontakt-logo {
+  position: absolute;
+  top: 32%;
+  left: 22%;
+}
+
+
+
+.form{
+	width: 40%;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+}
+.form h1{
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+		width: 100%;
+}
+
+.flex-rev input, .flex-rev textarea {
+    border: none;
+    background-color: #e6e6e6;
+    padding: 12px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 7px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    color: #243342;
+    outline-color: #243342;
+    outline-width: thin;
+	 -webkit-appearance: none;
+}
+.flex-rev textarea{
+	height: 150px;
+}
+
+
+
+
+.info {
+  
+    position: relative;
+    padding: 20px;
+}
+
+
+
+.info h2 {
+    color: #16f1dc;
+    font-size: 34px;
+   
+}
+
+.info h3 {
+    color: white;
+    letter-spacing: 1.2px;
+    margin-top:  20px;
+}
+
+.svg-wrap {
+    display: flex;
+    margin-top: 14px;
+}
+
+.svg-wrap a {
+    border: 0;
+    padding: 0;
+    display: flex;
+    color: #bbbbbb;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.svg-wrap a svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: fill 0.2s ease-in-out;
+    margin-right: 13px;
+}
+
+.svg-wrap a:hover svg {
+    fill: #16f1dc;
+    cursor: pointer;
+}
+
+.svg-wrap a:hover {
+    background-color: transparent;
+    color: #16f1dc;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 900px){
+	.content{
+		padding: 10px 0 0;
+		display: block;
+	}
+	.map{
+		display: none;
+	}
+	.contact{
+		width: 100%;
+		flex-direction: column-reverse;
+		border-radius: 0;
+		box-shadow: 0px 0px 0px 0px;
+	}
+	.other{
+		width: 100%;
+		padding: 20px 0;
+	}
+	.form{
+		width: 100%;
+  }
+  
+  .content{
+		align-items: flex-start;
+	}
+}
+
 }
 
 @media only screen and (min-width: 1170px) {
@@ -2779,7 +2963,7 @@ font-family: 'Ubuntu', sans-serif;
   letter-spacing: 1.5px;
 position: absolute;
 left: 10%;
-  bottom: 10.5%;
+  bottom: 340px;
 -webkit-transition: 0.4s ease-in-out;
 transition: 0.4s ease-in-out;
 }
@@ -2862,5 +3046,206 @@ letter-spacing: 2px;
       max-width: 100%;
       height: auto;
      }
+
+/* --------!!!!!!KONTAKT SIDE!!!!---------*/
+
+
+.content{
+  padding-top: 100px;
+	position: relative;
+	top: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.contact{
+	width: 80%;
+	max-width: 1080px;
+	display: flex;
+  border-top: 1px solid #bfc3c6;
+ overflow: hidden;
+}
+
+
+.other{
+	width: 50%;
+	background-image: url(billeder/HALFSHADOW.png);
+	background-size: contain;
+	background-position-x: 90%;
+  position: relative;
+  background-repeat: no-repeat;
+	display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+}
+
+
+
+
+
+.kontakt-logo {
+  position: absolute;
+  top: 31%;
+  left: 22%;
+}
+
+
+
+.form{
+	width: 40%;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+}
+.form h1{
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 1px;
+		width: 100%;
+}
+
+.flex-rev input, .flex-rev textarea {
+    border: 1 solid black;
+    background-color: #fbfbfa;
+    padding: 12px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 7px;
+    margin-bottom: 1px;
+    border-radius: 15px;
+    color: #243342;
+    outline-color: #243342;
+    outline-width: thin;
+	 -webkit-appearance: none;
+}
+.flex-rev textarea{
+	height: 150px;
+}
+
+
+
+.info {
+  
+    position: relative;
+    padding: 20px 0px;
+}
+
+
+
+.info h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+    color: #878f9c;
+    letter-spacing: 2px;
+    font-size: 20px;
+   
+}
+
+.adresse-kontakt {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+    color: #878f9c;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.kontakt-telefon {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+    color: #878f9c;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.kontakt-telefon a {
+  text-decoration: none;
+}
+
+.svg-wrap {
+    display: flex;
+    margin-top: 14px;
+}
+
+.svg-wrap a {
+    border: 0;
+    padding: 0;
+    display: flex;
+    color: #bbbbbb;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.svg-wrap a svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: fill 0.2s ease-in-out;
+    margin-right: 13px;
+}
+
+.svg-wrap a:hover svg {
+    fill: #16f1dc;
+    cursor: pointer;
+}
+
+.svg-wrap a:hover {
+    background-color: transparent;
+    color: #16f1dc;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 900px){
+	.content{
+		padding: 10px 0 0;
+		display: block;
+	}
+	.map{
+		display: none;
+	}
+	.contact{
+		width: 100%;
+		flex-direction: column-reverse;
+		border-radius: 0;
+		box-shadow: 0px 0px 0px 0px;
+	}
+	.other{
+		width: 100%;
+		padding: 20px 0;
+	}
+	.form{
+		width: 100%;
+  }
+  
+  .content{
+		align-items: flex-start;
+	}
+}
+
+
+
+
+
 
 }
