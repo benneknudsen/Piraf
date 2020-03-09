@@ -211,6 +211,20 @@ top: 70px;
   color: #dadee5;
 }
 
+.arrow3 {
+  padding: 0;
+}
+
+.arrow3:before {
+  content: url('billeder/navigation/ICON.png');
+  font: normal normal normal 8px/1 FontAwesome;
+  position: static;
+ margin-right: 10px;
+ 
+  letter-spacing: 1.4px;
+  color: #dadee5;
+}
+
 .arrow4 {
   padding: 0;
 }
@@ -681,7 +695,7 @@ color: #646f82;
 .searchbar {
   margin-top: 60px!important;
   cursor: pointer;
-  width: 40%;
+  width: 10%;
   height: 50px;
 }
 
@@ -858,7 +872,70 @@ hr.streg {
   z-index: 55;
 }
 
+.container-search {
+  position: relative;
+  width: 250px;
+  height: 75px;
+  margin: 0 auto;
+  display: block;
+}
 
+
+
+.searchbar {
+  position: relative;
+  font-size: 16px;
+  width: 200px;
+  height: 0px;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.1);
+  padding: 25px;
+  transition: all .2s;
+  transition-delay: .1s;
+  margin: 0 auto;
+  display: block;
+}
+
+.icon-search {
+  display:block;
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ z-index: 99;
+ width: 50px;
+ height: 50px;
+  cursor: pointer;
+  background-image: url(billeder/search.png);
+  -webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.icon-search:hover,
+.icon-search:focus {
+  -webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+  background-image: url(billeder/search-hover.png);
+}
+
+.button {
+ 
+  position: absolute;
+  
+  transition: all .2s;
+  transition-delay: .1s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+
+
+.searchbar::placeholder {
+  opacity: .5;
+}
 /* Slider */
 
 
@@ -2597,6 +2674,71 @@ hr.streg {
     z-index: 55;
 }
 
+.container-search {
+  position: relative;
+  width: 200px;
+  height: 0px;
+  margin: 0;
+  display: auto;
+}
+
+
+
+.searchbar {
+  position: relative;
+  font-size: 16px;
+  width: 250px;
+  height: 0px;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.1);
+  padding: 25px;
+  transition: all .2s;
+  transition-delay: .1s;
+  margin: 0;
+  display: auto;
+}
+
+.icon-search {
+  display:block;
+ position: absolute;
+ top: 60px;
+ right: -110px;
+ z-index: 99;
+ width: 50px;
+ height: 50px;
+  cursor: pointer;
+  background-image: url(billeder/search.png);
+  -webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.icon-search:hover,
+.icon-search:focus {
+  -webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+  background-image: url(billeder/search-hover.png);
+}
+
+.button {
+ 
+  position: absolute;
+  
+  transition: all .2s;
+  transition-delay: .1s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+
+
+.searchbar::placeholder {
+  opacity: .5;
+}
+
 
 /* Slider */
 
@@ -3773,5 +3915,14 @@ transition: 0.4s ease-in-out;
         margin-top: -55px;
         letter-spacing: 2.5px;
         }
+
+     
+        
+        
+/* CHECKOUT SIDE */
+
+
+
+
 
 }
