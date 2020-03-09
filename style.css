@@ -1802,7 +1802,7 @@ transition: 0.4s ease-in-out;
    color: #6d6e73;
    margin-top: 50px;
    letter-spacing: 1.5px;
-   width: 60%;
+   width: 80%;
    display: block;
    margin: 0 auto;
    }
@@ -1831,18 +1831,32 @@ transition: 0.4s ease-in-out;
   flex-grow: 1;
 }
 
+.titel-blog-h3 {
+   position: relative;
+    z-index: 3;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #5b6770;
+    text-align: center;
+    margin-top: -35px;
+    letter-spacing: 2.5px;
+}
+
+
+
      .blog-button {
       background-image: url( 'billeder/blog/button.png');
       background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 50px;
     background-color: transparent;  
-    width: 10%;
+    width: 20%;
     border: none;
     outline: none;
     cursor: pointer;
- margin: 0px 20px;
-    font-size: 14px;
+ margin: 0px 15px;
+    font-size: 12px;
     font-family: 'Barlow', sans-serif;
       font-weight: 400;
       color: #38698b;
@@ -3713,5 +3727,16 @@ transition: 0.4s ease-in-out;
           padding: 0;
         }
         
+        .titel-blog-h3 {
+          position: relative;
+          z-index: 3;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        color: #5b6770;
+        text-align: center;
+        margin-top: -55px;
+        letter-spacing: 2.5px;
+        }
 
 }
