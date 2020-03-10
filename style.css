@@ -2562,7 +2562,7 @@ pointer-events: none;
 
 .searchbar {
     margin-top: 60px;
-    cursor: pointer;
+    cursor: text;
     width: 10%;
     height: 50px;
 }
@@ -3209,7 +3209,7 @@ transition: 0.4s ease-in-out;
 }
 .kurvknap:hover,
 .kurvknap:focus {
-  width: 185px;
+  width: 190px;
   height: 55px;
   margin:60px 0px auto -5px;
   background-image: url(billeder/cards/kurv-hover.png);
@@ -4098,21 +4098,6 @@ select {
 
 
 
-/* Arrow */
-.b-select::after {
-  content: '\f0dd';
-  color: #0c3044;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  background: #34495e;
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
-}
 
 .a-select {
   width: 7em;
@@ -4124,19 +4109,180 @@ select {
   padding-left: 20px;
 }
 
-/* Arrow */
-.sorter::after {
-  content: '\f0dd';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  background: #34495e;
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
+
+
+
+.flex-parent-produkt {
+  padding-top: 50px;
+  display: flex;
+  width: 65%;
+  margin: auto;
 }
+
+
+.flex-child-produkt {
+  flex: 1;
+  margin: 10px;
+  position: relative;
+}
+
+.relateret{
+  display: flex;
+  margin: 0px 1px;
+}
+.relateret img{
+cursor: pointer;
+  margin: 10px 5px;
+}
+
+.produkt-p {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #9d9fa6;
+  letter-spacing: 1.5px;
+}
+
+.icon-produkt {
+ padding-bottom: 30px;
+  width: 61px;
+  height: 61px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.produkt-facebook {
+  display:block;
+  cursor: pointer;
+  background-image: url(billeder/produkt/fb.png);
+}
+
+.produkt-facebook:hover,
+.produkt-facebook:focus {
+  background-image: url(billeder/produkt/fb-hover.png);
+}
+
+
+.produkt-h2 {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #7f3764;
+  letter-spacing: 1.5px;
+}
+
+.produkt-info {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6d6e73;
+  letter-spacing: 1.5px;
+}
+
+.information p {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6d6e73;
+  letter-spacing: 1.5px;
+}
+
+.information p:before {
+  content: "\f058";
+  font: normal normal normal 16px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  position: static;
+  font-weight: 900;
+ margin-right: 10px;
+  letter-spacing: 1.4px;
+  color: #6d6e73;
+}
+
+.vaskeguide {
+  margin: 20px 0px;
+}
+
+
+.produkt-pris {
+  position: relative;
+  z-index: 3;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #7f3764;
+  text-align: center;
+  margin-top: -35px;
+  letter-spacing: 2.5px;
+  }
+
+  .produkt-tilbud {
+    position: relative;
+    z-index: 13;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #5b6770;
+    text-align: center;
+    margin-top: -15px;
+    text-decoration: #904957 line-through;
+    letter-spacing: 2.5px;
+    }
+
+    .padding-ned {
+      margin-top: 101px;
+    }
+
+    .child select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      border: 1px solid #9d9fa6 !important;
+      color: #9d9fa6;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      border-radius: 25px;
+      height: auto;
+      width: 200px;
+      background: #fff;
+      background-image: none;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+    }
+
+    .c-select {
+     
+      line-height: 3;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 25px;
+      padding-left: 20px;
+    }
+    
+    .wrapper-produkt {
+      position: relative;
+      
+    }
+    .wrapper-produkt:after {
+      content: url(billeder/sorter-arrow.png);
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 32%;
+      top: 12px;
+      pointer-events: none;
+    }
+    
+  
 
 }
