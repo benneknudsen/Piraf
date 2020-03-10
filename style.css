@@ -903,7 +903,7 @@ hr.streg {
  position: absolute;
  top: 0px;
  right: 0px;
- z-index: 99;
+ z-index: 19;
  width: 50px;
  height: 50px;
   cursor: pointer;
@@ -2030,17 +2030,6 @@ transition: 0.4s ease-in-out;
         
       }
   
-      .pris-p {
-        position: relative;
-        z-index: 3;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #5b6770;
-        text-align: center;
-        margin-top: -40px;
-        letter-spacing: 2.5px;
-        }
 
         .blogcard-p {
           position: relative;
@@ -3856,17 +3845,7 @@ transition: 0.4s ease-in-out;
         
       }
   
-      .pris-p {
-        position: relative;
-        z-index: 3;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #5b6770;
-        text-align: center;
-        margin-top: -40px;
-        letter-spacing: 2.5px;
-        }
+    
 
         .blogcard-p {
           position: relative;
@@ -3922,7 +3901,90 @@ transition: 0.4s ease-in-out;
 /* CHECKOUT SIDE */
 
 
+/* PRODUKT LISTE */
+
+.sorter {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  
+ 
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #9d9fa6 !important;
+  color: #9d9fa6;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  border-radius: 25px;
+  height: auto;
+  width: 200px;
+  background: #fff;
+  background-image: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
 
 
+
+.b-select {
+  width: 14em;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+
+
+/* Arrow */
+.b-select::after {
+  content: '\f0dd';
+  color: #0c3044;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.a-select {
+  width: 7em;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+/* Arrow */
+.a-select::after {
+  content: '\f0dd';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
 
 }
